@@ -58,5 +58,7 @@ ac_add_options --with-distribution-id=net.waterfox
 if [ -d "$PWD"/waterfox/browser/locales/en-GB ]; then
     ac_add_options --with-l10n-base="$PWD"/waterfox/browser/locales
 fi
+ac_add_options --without-wasm-sandboxed-libraries
+
 export MOZ_REQUIRE_SIGNING=
 export MOZ_TELEMETRY_REPORTING=
